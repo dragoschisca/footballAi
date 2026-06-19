@@ -1,4 +1,4 @@
-package com.fotballai.tornament.entity;
+package com.fotballai.domain.enums;
 
 public enum TournamentEnum {
     CHAMPIONS_LEAGUE,

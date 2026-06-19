@@ -1,6 +1,6 @@
-package com.fotballai.tornament.entity;
+package com.fotballai.domain;
 
-import com.fotballai.team.entity.Team;
+import com.fotballai.domain.enums.TournamentEnum;
 import jakarta.persistence.*;
 
 import java.util.Set;

@@ -1,4 +1,4 @@
-package com.fotballai.coach.entity;
+package com.fotballai.domain.enums;
 
 public enum CoachLicenseEnum {
     BASIC,

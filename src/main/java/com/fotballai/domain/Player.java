@@ -1,16 +1,16 @@
-package com.fotballai.player.entity;
+package com.fotballai.domain;
 
-import com.fotballai.common.entity.Person;
+import com.fotballai.domain.enums.PositionEnum;
 import jakarta.persistence.*;
 
 @Entity
 @Table(name="players")
-public class Player extends Person {
+public class Player extends AbstractPersonEntity {
     private PositionEnum Position;
 
     @ManyToOne
     @JoinColumn(name = "team_id")
-    private com.fotballai.team.entity.Team AssociatedTeam;
+    private Team AssociatedTeam;
 
     public PositionEnum getPosition() {
         return Position;
@@ -19,10 +19,10 @@ public class Player extends Person {
         Position = position;
     }
 
-    public com.fotballai.team.entity.Team getAssociatedTeam() {
+    public Team getAssociatedTeam() {
         return AssociatedTeam;
     }
-    public void setAssociatedTeam(com.fotballai.team.entity.Team team) {
+    public void setAssociatedTeam(Team team) {
         AssociatedTeam = team;
     }
 

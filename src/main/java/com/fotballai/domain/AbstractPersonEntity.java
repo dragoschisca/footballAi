@@ -1,12 +1,11 @@
-package com.fotballai.common.entity;
+package com.fotballai.domain;
 
-import com.fotballai.team.entity.Team;
 import jakarta.persistence.*;
 
 import java.util.Date;
 
 @MappedSuperclass
-public abstract class Person {
+public abstract class AbstractPersonEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long Id;

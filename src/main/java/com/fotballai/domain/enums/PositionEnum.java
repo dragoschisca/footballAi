@@ -1,4 +1,4 @@
-package com.fotballai.player.entity;
+package com.fotballai.domain.enums;
 
 public enum PositionEnum {
 

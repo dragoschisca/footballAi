@@ -1,8 +1,5 @@
-package com.fotballai.team.entity;
+package com.fotballai.domain;
 
-import com.fotballai.area.entity.Area;
-import com.fotballai.player.entity.Player;
-import com.fotballai.tornament.entity.Tournament;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Size;
 

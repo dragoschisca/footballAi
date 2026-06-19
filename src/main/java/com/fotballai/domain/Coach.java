@@ -1,11 +1,11 @@
-package com.fotballai.coach.entity;
+package com.fotballai.domain;
 
-import com.fotballai.common.entity.Person;
+import com.fotballai.domain.enums.CoachLicenseEnum;
 import jakarta.persistence.*;
 
 @Entity
 @Table(name="coaches")
-public class Coach extends Person {
+public class Coach extends AbstractPersonEntity {
 
     @Enumerated(EnumType.STRING)
     public CoachLicenseEnum License;
