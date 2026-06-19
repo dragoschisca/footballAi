@@ -1,7 +1,7 @@
-package com.fotballai.area.controller;
+package com.fotballai.web.rest;
 
-import com.fotballai.area.entity.Area;
-import com.fotballai.area.service.AreaService;
+import com.fotballai.domain.Area;
+import com.fotballai.service.AreaService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
